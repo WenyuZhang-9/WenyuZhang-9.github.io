@@ -17,7 +17,12 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I graduated from School of Mechanical Science and Engineering,  Huazhong University of Science and Technology, Wuhan China. with a doctor’s degree, advised by Yihua Kang and from School of Mechanical Engineering, Sichuan University, Chengdu China with a bachelor’s degree. I have published 20+ papers with 
+Hi! I am Wenyu Zhang (张雯钰), a Ph.D. student in Urban and Regional Science at Texas A&M University, with a focus on GIS and a passion for exploring the intersection of data, technology, and human-centered perspectives. My research interests include responsible geo-AI, urban informatics, and human mobility, where I aim to uncover complex spatial relationships and propose practical solutions. My work combines big data, machine learning, and spatial analysis, with a strong emphasis on social responsibility and advocating for the rights of vulnerable communities.
+
+In my studies, I integrate deep learning, remote sensing, and human-land spatial relationship analysis to advance the application of spatial science to real-world challenges, contributing to a fairer and more sustainable future.
+
+Outside of campus, I enjoy road trips and photography, capturing moments that inspire me and exploring new landscapes along the way I have published 20+ papers with 
+
  <a href='https://scholar.google.com/citations?user=WMkMTb4AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 My research interest includes: 
@@ -33,7 +38,42 @@ My research interest includes:
 # 🎓 Educations 
 - *2016.06 - 2022.12*, <a href="http://english.hust.edu.cn/"><img class="svg" src="/images/HUST_logo.svg" width="23pt"></a> School of Mechanical Science and Engineering, Huazhong University of Science and Technology, Wuhan China. 
 - *2012.09 - 2016.06*, <a href="https://en.scu.edu.cn/"><img class="svg" src="/images/SCU_logo.svg" width="20pt"></a> School of Manufacturing Science and Engineering, Sichuan University, Chengdu China. 
- 
+Ph.D. in Urban & Regional Science, Texas A&M University. United Sates, 2024- Present
+
+M.S in Applied GIS, National University of Singapore. Singapore,2023-2024
+
+B.S. in Geographical Information Science, Central China Normal University China,2019-2023
+
+# 🎓 Educations 
+- Texas A&M University, United States <a href="http://english.hust.edu.cn/"><img class="svg" src="/assets/images/badges/tamu.png" width="23pt"></a>
+  position: >- 
+    Department of Urban <br/>
+    Ph.D. Student
+  *Sep 2024 - Present*
+
+- National University of Singapore, Singapore <a href="http://english.hust.edu.cn/"><img class="svg" src="/assets/images/badges/nus.png" width="23pt"></a>
+  position: Master in Applied GIS
+  *July 2023 - Sep 2024*
+
+- Central China Normal University, China <a href="http://english.hust.edu.cn/"><img class="svg" src="/assets/images/badges/ccnu.png" width="23pt"></a>
+  position: B.S. in Geographical Information Science
+  *Sep 2019 - June 2023*
+
+experience:
+- Texas A&M University
+  logo: /assets/images/badges/tamu.png
+  position: Research Assistant
+  date: Sep 2024 - Present
+
+- name: The Hong Kong University of Science and Technology, Guangzhou
+  logo: /assets/images/badges/hkustgz.png  # 请确认 logo 文件
+  position: Research Assistant
+  date: Feb 2024 - August 2024
+
+- name: Chinese Academy of Sciences
+  logo: /assets/images/badges/cas.png  # 请确认 logo 文件
+  position: Research Intern
+  date: July 2022 - March 2023
 
 # 📝 Publications 
 
