@@ -187,10 +187,19 @@ p:last-child{margin-bottom:0}
 .pub-cat{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin:28px 0 12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .pub-cat:first-child{margin-top:0}
 .pub-card h4{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.93rem;font-weight:500;line-height:1.65;margin:0 0 4px;color:var(--ink)}
-.pub-card{padding:20px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:210px 1fr;gap:22px;align-items:start}
+.pub-card{padding:20px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:240px 1fr;gap:22px;align-items:start}
 .pub-fig{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;background:var(--light);display:block}
 .pub-body{display:flex;flex-direction:column;gap:0}
 .pub-abstract{font-size:.84rem;color:var(--muted);line-height:1.65;margin:6px 0 12px}
+/* pub figure carousel */
+.pub-carousel{position:relative;border-radius:6px;overflow:hidden;background:var(--light)}
+.pub-carousel-track{display:flex;transition:transform .35s ease;will-change:transform}
+.pub-carousel-track img{width:100%;flex-shrink:0;aspect-ratio:4/3;object-fit:contain;background:#fafafa;display:block}
+.pub-carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);border:none;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--ink);padding:0;box-shadow:0 1px 4px rgba(0,0,0,.15);line-height:1}
+.pub-carousel-prev{left:4px}.pub-carousel-next{right:4px}
+.pub-carousel-dots-wrap{display:flex;justify-content:center;gap:4px;padding:5px 0;background:#fafafa}
+.pub-carousel-dot{width:5px;height:5px;border-radius:50%;background:var(--line);border:none;padding:0;cursor:pointer;transition:background .2s}
+.pub-carousel-dot.active{background:var(--accent)}
 .pub-links{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}
 .pub-link{font-size:.77rem;padding:3px 11px;border-radius:20px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;transition:background .15s,color .15s;white-space:nowrap}
 .pub-link:hover{background:var(--accent);color:#fff}

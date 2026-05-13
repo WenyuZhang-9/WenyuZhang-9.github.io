@@ -45,6 +45,28 @@ if (mapEl && typeof L !== 'undefined') {
   });
 }
 
+// Pub figure carousels
+document.querySelectorAll('.pub-carousel').forEach(el => {
+  const track = el.querySelector('.pub-carousel-track');
+  const imgs = [...track.querySelectorAll('img')];
+  const dotsWrap = el.querySelector('.pub-carousel-dots-wrap');
+  let idx = 0;
+  const dots = imgs.map((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'pub-carousel-dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => go(i));
+    dotsWrap.appendChild(d);
+    return d;
+  });
+  function go(n) {
+    idx = (n + imgs.length) % imgs.length;
+    track.style.transform = `translateX(-${idx * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+  el.querySelector('.pub-carousel-prev')?.addEventListener('click', () => go(idx - 1));
+  el.querySelector('.pub-carousel-next')?.addEventListener('click', () => go(idx + 1));
+});
+
 // Quote carousel
 const carousel = document.querySelector('.quote-carousel');
 if (carousel) {
