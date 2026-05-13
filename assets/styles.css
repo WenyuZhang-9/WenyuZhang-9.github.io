@@ -123,7 +123,7 @@ p:last-child{margin-bottom:0}
 .edu-header{display:flex;flex-direction:column;gap:2px;margin-bottom:4px}
 .edu-degree{font-size:.98rem;font-weight:700;margin:0;color:var(--ink)}
 .edu-date{font-size:.82rem;color:var(--muted);white-space:nowrap;flex-shrink:0}
-.edu-inst{font-size:.88rem;color:var(--ink);margin:0 0 10px}.edu-city{color:var(--muted)}.edu-tag{display:inline;background:rgba(47,93,124,.1);border:1px solid rgba(47,93,124,.2);border-radius:4px;padding:1px 7px;color:var(--accent);white-space:nowrap}
+.edu-inst{font-size:.88rem;color:var(--ink);margin:0 0 10px;font-weight:700}.edu-city{color:var(--muted)}.edu-tag{display:inline;background:rgba(47,93,124,.1);border:1px solid rgba(47,93,124,.2);border-radius:4px;padding:1px 7px;color:var(--accent);white-space:nowrap}
 .edu-meta{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}
 .edu-meta dt{color:var(--muted);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;padding-top:1px}
 .edu-meta dd{margin:0;font-size:.88rem;color:var(--ink)}
