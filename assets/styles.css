@@ -105,8 +105,8 @@ p:last-child{margin-bottom:0}
 .edu-card{display:flex;flex-direction:column;gap:12px;padding:20px;border:1px solid var(--line);border-radius:10px}
 .edu-card:first-child{border-top:1px solid var(--line);padding-top:20px}
 .edu-card--tamu{background:rgba(80,0,0,.05);border-color:rgba(80,0,0,.18)}
-.edu-card--nus{background:rgba(0,61,124,.05);border-color:rgba(0,61,124,.18)}
-.edu-card--ccnu{background:rgba(155,0,0,.05);border-color:rgba(155,0,0,.18)}
+.edu-card--nus{background:rgba(29,66,124,.05);border-color:rgba(29,66,124,.18)}
+.edu-card--ccnu{background:rgba(0,117,129,.05);border-color:rgba(0,117,129,.18)}
 .edu-logo{width:110px;height:110px;object-fit:contain;flex-shrink:0;margin-top:2px}
 .edu-header{display:flex;flex-direction:column;gap:2px;margin-bottom:4px}
 .edu-degree{font-size:.98rem;font-weight:700;margin:0;color:var(--ink)}
