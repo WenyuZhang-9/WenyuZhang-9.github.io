@@ -111,6 +111,8 @@ p:last-child{margin-bottom:0}
 .edu-meta{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}
 .edu-meta dt{color:var(--muted);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;padding-top:1px}
 .edu-meta dd{margin:0;font-size:.88rem;color:var(--ink)}
+.edu-award-list{margin:0;padding-left:14px;display:grid;gap:1px}
+.edu-award-list li{font-size:.88rem;color:var(--ink)}
 
 /* ── Teaching evaluations ── */
 .eval-box{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px}
