@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem \"c:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\" -Recurse -Include \"*.jpg\",\"*.jpeg\",\"*.png\",\"*.webp\",\"*.gif\",\"*.svg\")",
+      "Bash(Select-Object FullName, LastWriteTime)",
+      "Bash(Sort-Object LastWriteTime -Descending)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git commit -m 'Remove Knowledge-Aware Chatbots publication from homepage *)",
+      "Bash(gh run *)",
+      "PowerShell(gh run list --repo WenyuZhang-9/WenyuZhang-9.github.io --limit 5)",
+      "PowerShell(Invoke-RestMethod \"https://api.github.com/repos/WenyuZhang-9/WenyuZhang-9.github.io/actions/runs?per_page=5\")",
+      "PowerShell(Invoke-RestMethod \"https://api.github.com/repos/WenyuZhang-9/WenyuZhang-9.github.io\")",
+      "WebSearch",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:en.wikipedia.org)"
+    ]
+  }
+}
