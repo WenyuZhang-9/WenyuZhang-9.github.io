@@ -25,7 +25,7 @@ if (mapEl && typeof L !== 'undefined') {
   const institutions = [
     { latlng: [30.628, -96.334], label: 'Texas A&M University', sub: 'College Station, TX · 2024–present' },
     { latlng: [1.296, 103.776], label: 'National University of Singapore', sub: 'Singapore · 2023–2024' },
-    { latlng: [22.337, 114.176], label: 'Hong Kong Univ. of Science and Technology', sub: 'Hong Kong, China · 2024' },
+    { latlng: [23.043, 113.404], label: 'Hong Kong Univ. of Science and Technology', sub: 'Guangzhou, China · 2024' },
     { latlng: [30.593, 114.305], label: 'Central China Normal University', sub: 'Wuhan, China · 2019–2023' },
     { latlng: [40.001, 116.322], label: 'Aerospace Information Research Institute, CAS', sub: 'Beijing, China · 2022 (Internship)' }
   ];
