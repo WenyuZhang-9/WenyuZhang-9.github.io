@@ -218,7 +218,8 @@ p:last-child{margin-bottom:0}
 .pub-body{display:flex;flex-direction:column;gap:0}
 .pub-abstract{font-size:.84rem;color:var(--muted);line-height:1.65;margin:6px 0 12px}
 /* pub figure carousel */
-.pub-carousel{position:relative;border-radius:6px;overflow:hidden;background:var(--light)}
+.pub-carousel{position:relative;border-radius:6px;overflow:hidden;background:var(--light);box-shadow:0 6px 22px rgba(0,0,0,.13)}
+.pub-fig{border-radius:6px;box-shadow:0 6px 22px rgba(0,0,0,.13);display:block;width:100%}
 .pub-carousel-track{display:flex;transition:transform .35s ease;will-change:transform}
 .pub-carousel-track img{width:100%;flex-shrink:0;height:300px;object-fit:contain;background:#f7f8fa;display:block;padding:10px 14px}
 .pub-carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);border:none;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--ink);padding:0;box-shadow:0 1px 4px rgba(0,0,0,.15);line-height:1}
