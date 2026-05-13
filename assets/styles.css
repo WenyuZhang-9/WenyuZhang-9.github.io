@@ -170,6 +170,11 @@ p:last-child{margin-bottom:0}
 .review-list li:last-child{border-bottom:0}
 
 /* ── Footprint ── */
+#footprint-map{height:380px;border-radius:10px;margin-bottom:10px;border:1px solid var(--line);overflow:hidden}
+.map-legend{font-size:.78rem;color:var(--muted);margin:0 0 28px;display:flex;align-items:center;gap:6px}
+.map-dot{display:inline-block;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3);flex-shrink:0}
+.map-dot.inst{width:12px;height:12px;border-radius:50%;background:#2f5d7c}
+.map-dot.conf{width:10px;height:10px;border-radius:2px;background:#e07b39;margin-left:10px}
 .footprint-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .footprint-cat{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:16px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .footprint-list{list-style:none;margin:0;padding:0}
