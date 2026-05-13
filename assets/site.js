@@ -95,6 +95,38 @@ if (carousel) {
   setInterval(() => goTo(current + 1), 4000);
 }
 
+// Back to top button
+(function () {
+  const btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.setAttribute('aria-label', 'Back to top');
+  btn.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+  document.body.appendChild(btn);
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 300);
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+
+// Mobile nav toggle
+(function () {
+  const toggle = document.querySelector('.mnav-toggle');
+  const links = document.querySelector('.mnav-links');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  });
+  links.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.querySelector('i').className = 'fa-solid fa-bars';
+    });
+  });
+})();
+
 // Highlight active section in sidebar nav as user scrolls
 const navLinks = document.querySelectorAll('.sidebar-nav a[href^="#"]');
 if (navLinks.length) {
