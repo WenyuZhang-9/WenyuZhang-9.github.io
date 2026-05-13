@@ -119,6 +119,9 @@ p:last-child{margin-bottom:0}
 .timeline-item .date{color:var(--muted);font-size:.84rem;font-weight:600;padding-top:2px}
 .timeline-item h3{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.93rem;font-weight:600;margin:0 0 2px}
 .timeline-item p{margin:0;color:var(--muted);font-size:.88rem}
+.sub-list{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:4px}
+.sub-list li{font-size:.88rem;color:var(--muted)}
+.sub-date{font-weight:600;color:var(--ink);margin-right:6px}
 
 /* ── Quote ── */
 .quote{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px}
