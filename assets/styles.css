@@ -138,6 +138,53 @@ p:last-child{margin-bottom:0}
 .skills li{display:inline-flex;padding:4px 10px;border:1px solid var(--line);border-radius:5px;color:var(--muted);font-size:.84rem}
 .download{background:var(--light);border-radius:8px;padding:20px}
 
+/* ── Section headings ── */
+.section-h{font-size:1.55rem;margin-bottom:24px;padding-bottom:10px;border-bottom:2px solid var(--line)}
+.first-section{padding-top:52px}
+.section-alt{background:#fafafa}
+
+/* ── Publications (homepage) ── */
+.pub-cat{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin:28px 0 12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.pub-cat:first-child{margin-top:0}
+.pub-card h4{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.93rem;font-weight:500;line-height:1.65;margin:0 0 4px;color:var(--ink)}
+
+/* ── Projects ── */
+.project-list{display:grid;gap:0}
+.project-block{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--line)}
+.project-num{font-family:Georgia,serif;font-size:1.4rem;font-weight:500;color:var(--line);padding-top:2px}
+.project-block h3{font-size:1.05rem;margin-bottom:8px}
+.project-block p{color:var(--muted);font-size:.93rem;margin:0 0 6px}
+.project-papers{font-size:.8rem !important;color:#aaa !important}
+
+/* ── Awards ── */
+.award-list{display:grid;gap:0}
+.award-item{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line);align-items:start}
+.award-year{font-size:.8rem;font-weight:700;color:var(--muted);padding-top:2px}
+.award-title{font-size:.95rem;margin:0 0 2px;color:var(--ink);font-weight:500}
+.award-amt{font-size:.82rem;color:var(--accent);margin-left:6px;font-weight:600}
+.award-org{font-size:.82rem;color:var(--muted);margin:0}
+
+/* ── Service ── */
+.review-list{list-style:none;margin:0;padding:0}
+.review-list li{padding:8px 0;border-bottom:1px solid var(--line);font-size:.93rem;color:var(--muted)}
+.review-list li:last-child{border-bottom:0}
+
+/* ── Footprint ── */
+.footprint-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.footprint-cat{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:16px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.footprint-list{list-style:none;margin:0;padding:0}
+.footprint-list li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+.footprint-list li:last-child{border-bottom:0}
+.fp-flag{font-size:1.2rem;flex-shrink:0;line-height:1.4}
+.footprint-list strong{display:block;font-size:.93rem;color:var(--ink);margin-bottom:2px}
+.footprint-list span{display:block;font-size:.8rem;color:var(--muted)}
+
+/* ── Contact grid ── */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.contact-item{display:flex;align-items:center;gap:10px;padding:14px 16px;border:1px solid var(--line);border-radius:8px;color:var(--ink);font-size:.9rem;font-weight:500;transition:border-color .15s,background .15s}
+.contact-item:hover{border-color:#bbb;background:var(--light);text-decoration:none}
+.contact-item i{font-size:1.05rem;color:var(--muted);width:18px;text-align:center;flex-shrink:0}
+
 /* ── Footer ── */
 .site-footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);background:#fff;font-size:.84rem;margin-top:auto}
 .footer-wrap{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
@@ -154,8 +201,10 @@ p:last-child{margin-bottom:0}
   .sidebar-nav{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:4px}
   .sidebar-nav a{padding:6px 10px;font-size:.85rem}
   .site-body{min-height:auto}
-  .two-col,.cv-grid,.contact-card,.research-block,.timeline-item{grid-template-columns:1fr}
-  .three-col,.news-grid{grid-template-columns:1fr}
+  .two-col,.cv-grid,.contact-card,.research-block,.timeline-item,.footprint-grid{grid-template-columns:1fr}
+  .three-col,.news-grid,.contact-grid{grid-template-columns:1fr}
+  .project-block{grid-template-columns:40px 1fr}
+  .award-item{grid-template-columns:48px 1fr}
   .footer-wrap{flex-direction:column;align-items:flex-start;gap:10px}
   .container{width:min(calc(100% - 32px),var(--container))}
 }
