@@ -52,20 +52,33 @@ document.querySelectorAll('.pub-carousel').forEach(el => {
   const imgs = [...track.querySelectorAll('img')];
   const dotsWrap = el.querySelector('.pub-carousel-dots-wrap');
   let idx = 0;
+  let timer = null;
+
   const dots = imgs.map((_, i) => {
     const d = document.createElement('button');
     d.className = 'pub-carousel-dot' + (i === 0 ? ' active' : '');
-    d.addEventListener('click', () => go(i));
+    d.addEventListener('click', () => { go(i); resetTimer(); });
     dotsWrap.appendChild(d);
     return d;
   });
+
   function go(n) {
     idx = (n + imgs.length) % imgs.length;
     track.style.transform = `translateX(-${idx * 100}%)`;
     dots.forEach((d, i) => d.classList.toggle('active', i === idx));
   }
-  el.querySelector('.pub-carousel-prev')?.addEventListener('click', () => go(idx - 1));
-  el.querySelector('.pub-carousel-next')?.addEventListener('click', () => go(idx + 1));
+  function startTimer() { timer = setInterval(() => go(idx + 1), 3500); }
+  function stopTimer() { clearInterval(timer); timer = null; }
+  function resetTimer() { stopTimer(); startTimer(); }
+
+  el.querySelector('.pub-carousel-prev')?.addEventListener('click', () => { go(idx - 1); resetTimer(); });
+  el.querySelector('.pub-carousel-next')?.addEventListener('click', () => { go(idx + 1); resetTimer(); });
+  el.addEventListener('mouseenter', stopTimer);
+  el.addEventListener('mouseleave', startTimer);
+  el.addEventListener('touchstart', stopTimer, { passive: true });
+  el.addEventListener('touchend', () => setTimeout(startTimer, 2000), { passive: true });
+
+  startTimer();
 });
 
 // Quote carousel

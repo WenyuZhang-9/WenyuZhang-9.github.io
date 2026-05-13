@@ -188,6 +188,22 @@ p:last-child{margin-bottom:0}
 .skills li{display:inline-flex;padding:4px 10px;border:1px solid var(--line);border-radius:5px;color:var(--muted);font-size:.84rem}
 .download{background:var(--light);border-radius:8px;padding:20px}
 
+/* ── About + News grid ── */
+.about-grid{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.about-news-card{border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.about-news-head{padding:11px 16px;background:#fafafa;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.about-news-title{margin:0;font-size:.9rem;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);display:flex;align-items:center;gap:6px}
+.about-news-title i{color:var(--accent);font-size:.82rem}
+.about-news-updated{font-size:.7rem;color:var(--muted);white-space:nowrap}
+
+/* ── Latest News list ── */
+.news-list{list-style:none;margin:0;padding:0 16px}
+.news-item{padding:13px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.news-item:last-child{border-bottom:0;padding-bottom:14px}
+.news-date{font-size:.7rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.news-body{font-size:.86rem;line-height:1.65;color:var(--ink)}
+.news-body em{font-style:italic;color:var(--muted)}
+
 /* ── Section headings ── */
 .section-h{font-size:1.55rem;margin-bottom:24px;padding-bottom:10px;border-bottom:2px solid var(--line)}
 .first-section{padding-top:52px}
@@ -204,7 +220,7 @@ p:last-child{margin-bottom:0}
 /* pub figure carousel */
 .pub-carousel{position:relative;border-radius:6px;overflow:hidden;background:var(--light)}
 .pub-carousel-track{display:flex;transition:transform .35s ease;will-change:transform}
-.pub-carousel-track img{width:100%;flex-shrink:0;aspect-ratio:4/3;object-fit:contain;background:#fafafa;display:block}
+.pub-carousel-track img{width:100%;flex-shrink:0;height:300px;object-fit:contain;background:#f7f8fa;display:block;padding:10px 14px}
 .pub-carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);border:none;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--ink);padding:0;box-shadow:0 1px 4px rgba(0,0,0,.15);line-height:1}
 .pub-carousel-prev{left:4px}.pub-carousel-next{right:4px}
 .pub-carousel-dots-wrap{display:flex;justify-content:center;gap:4px;padding:5px 0;background:#fafafa}
@@ -293,6 +309,7 @@ p:last-child{margin-bottom:0}
   .mnav-links a:hover{color:var(--ink);background:var(--light);text-decoration:none}
   .mnav-links a.active{color:var(--ink);background:var(--light);font-weight:600}
   .two-col,.cv-grid,.contact-card,.research-block,.timeline-item,.footprint-grid,.edu-card,.appt-cols,.pub-card{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
   .edu-list{grid-template-columns:1fr}
   .edu-logo{width:44px;height:44px}
   .three-col,.news-grid,.contact-grid{grid-template-columns:1fr}
