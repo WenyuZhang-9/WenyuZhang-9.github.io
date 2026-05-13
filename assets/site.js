@@ -1,6 +1,15 @@
 
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = String(new Date().getFullYear()));
 
+// Open all external and mailto links in a new tab
+document.querySelectorAll('a[href]').forEach(a => {
+  const h = a.getAttribute('href');
+  if (h && (h.startsWith('http') || h.startsWith('mailto'))) {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  }
+});
+
 // Footprint map
 const mapEl = document.getElementById('footprint-map');
 if (mapEl && typeof L !== 'undefined') {
