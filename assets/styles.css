@@ -129,7 +129,7 @@ p:last-child{margin-bottom:0}
 .quote-dot.active{background:var(--accent)}
 
 /* ── Appointments two-col ── */
-.appt-cols{display:grid;grid-template-columns:1fr 1.6fr;gap:48px;align-items:start}
+.appt-cols{display:grid;grid-template-columns:1.3fr 1.6fr;gap:48px;align-items:start}
 .appt-col-head{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 12px}
 
 /* ── Timeline ── */
