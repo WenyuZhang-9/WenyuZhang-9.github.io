@@ -14,7 +14,10 @@
       "PowerShell(Invoke-RestMethod \"https://api.github.com/repos/WenyuZhang-9/WenyuZhang-9.github.io\")",
       "WebSearch",
       "WebFetch(domain:commons.wikimedia.org)",
-      "WebFetch(domain:en.wikipedia.org)"
+      "WebFetch(domain:en.wikipedia.org)",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\\\\assets\\\\media\\\\pub\\\\pub3\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\\\\assets\\\\media\\\\pub\\\\pub4\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
