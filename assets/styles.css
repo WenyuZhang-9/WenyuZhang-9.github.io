@@ -109,6 +109,18 @@ p:last-child{margin-bottom:0}
 .edu-meta dt{color:var(--muted);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;padding-top:1px}
 .edu-meta dd{margin:0;font-size:.88rem;color:var(--ink)}
 
+/* ── Teaching evaluations ── */
+.eval-box{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.eval-title{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin:0 0 12px}
+.eval-source{font-weight:400;color:var(--muted);margin-left:6px;text-transform:none;letter-spacing:0}
+.eval-courses{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:14px}
+.eval-course-name{font-size:.8rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.eval-course-name span{font-weight:400;color:var(--muted);font-size:.75rem;margin-left:4px}
+.eval-scores{list-style:none;margin:0;padding:0;display:grid;gap:3px}
+.eval-scores li{font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+.eval-scores li strong{color:var(--accent);font-weight:600;white-space:nowrap}
+.eval-quote{margin:12px 0 0;padding:10px 14px;border-left:3px solid var(--accent);background:rgba(47,93,124,.04);font-size:.82rem;color:var(--muted);font-style:italic;line-height:1.6}
+
 /* ── Appointments two-col ── */
 .appt-cols{display:grid;grid-template-columns:1fr 1.6fr;gap:48px;align-items:start}
 .appt-col-head{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 12px}
