@@ -26,7 +26,8 @@ if (mapEl && typeof L !== 'undefined') {
     { latlng: [30.628, -96.334], label: 'Texas A&M University', sub: 'College Station, TX · 2024–present' },
     { latlng: [1.296, 103.776], label: 'National University of Singapore', sub: 'Singapore · 2023–2024' },
     { latlng: [22.337, 114.176], label: 'Hong Kong Univ. of Science and Technology', sub: 'Hong Kong · 2024' },
-    { latlng: [30.593, 114.305], label: 'Central China Normal University', sub: 'Wuhan, China · 2019–2023' }
+    { latlng: [30.593, 114.305], label: 'Central China Normal University', sub: 'Wuhan, China · 2019–2023' },
+    { latlng: [40.001, 116.322], label: 'Aerospace Information Research Institute, CAS', sub: 'Beijing, China · 2022 (Internship)' }
   ];
   const conferences = [
     { latlng: [37.779, -122.419], label: 'AAG Annual Meeting 2026', sub: 'San Francisco, CA' },
