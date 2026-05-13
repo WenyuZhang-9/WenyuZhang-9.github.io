@@ -104,6 +104,9 @@ p:last-child{margin-bottom:0}
 .edu-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .edu-card{display:flex;flex-direction:column;gap:12px;padding:20px;border:1px solid var(--line);border-radius:10px}
 .edu-card:first-child{border-top:1px solid var(--line);padding-top:20px}
+.edu-appts{border-top:1px solid var(--line);margin-top:8px;padding-top:8px;display:flex;flex-direction:column;gap:6px}
+.edu-appt-item{display:flex;gap:10px;font-size:.83rem;color:var(--ink)}
+.edu-appt-date{color:var(--muted);font-size:.78rem;white-space:nowrap;padding-top:1px;min-width:80px}
 .edu-card--tamu{background:rgba(80,0,0,.05);border-color:rgba(80,0,0,.18)}
 .edu-card--nus{background:rgba(29,66,124,.05);border-color:rgba(29,66,124,.18)}
 .edu-card--ccnu{background:rgba(0,117,129,.05);border-color:rgba(0,117,129,.18)}
