@@ -45,6 +45,33 @@ if (mapEl && typeof L !== 'undefined') {
   });
 }
 
+// Quote carousel
+const carousel = document.querySelector('.quote-carousel');
+if (carousel) {
+  const quotes = [...carousel.querySelectorAll('.eval-quote')];
+  const dotsEl = carousel.querySelector('.quote-dots');
+  let current = 0;
+
+  const dots = quotes.map((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'quote-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Quote ' + (i + 1));
+    d.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(d);
+    return d;
+  });
+
+  function goTo(n) {
+    quotes[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + quotes.length) % quotes.length;
+    quotes[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  setInterval(() => goTo(current + 1), 4000);
+}
+
 // Highlight active section in sidebar nav as user scrolls
 const navLinks = document.querySelectorAll('.sidebar-nav a[href^="#"]');
 if (navLinks.length) {

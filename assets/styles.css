@@ -116,7 +116,12 @@ p:last-child{margin-bottom:0}
 .eval-scores{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-wrap:wrap;gap:6px 24px}
 .eval-scores li{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px}
 .eval-scores li strong{color:var(--accent);font-weight:600}
-.eval-quote{margin:8px 0 0;padding:10px 14px;border-left:3px solid var(--accent);background:rgba(47,93,124,.04);font-size:.82rem;color:var(--muted);font-style:italic;line-height:1.6}
+.quote-carousel{position:relative;min-height:60px}
+.eval-quote{margin:8px 0 0;padding:10px 14px;border-left:3px solid var(--accent);background:rgba(47,93,124,.04);font-size:.82rem;color:var(--muted);font-style:italic;line-height:1.6;opacity:0;position:absolute;width:100%;top:0;left:0;transition:opacity .5s ease;pointer-events:none}
+.eval-quote.active{opacity:1;position:relative;pointer-events:auto}
+.quote-dots{display:flex;gap:5px;margin-top:10px;justify-content:flex-start}
+.quote-dot{width:6px;height:6px;border-radius:50%;background:var(--line);cursor:pointer;transition:background .2s;border:none;padding:0}
+.quote-dot.active{background:var(--accent)}
 
 /* ── Appointments two-col ── */
 .appt-cols{display:grid;grid-template-columns:1fr 1.6fr;gap:48px;align-items:start}
