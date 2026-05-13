@@ -110,8 +110,11 @@ p:last-child{margin-bottom:0}
 .edu-card{display:flex;flex-direction:column;gap:12px;padding:20px;border:1px solid var(--line);border-radius:10px;min-width:0}
 .edu-card:first-child{border-top:1px solid var(--line);padding-top:20px}
 .edu-card--tamu{background:rgba(80,0,0,.05);border-color:rgba(80,0,0,.18)}
+.edu-card--tamu .edu-inst{color:#500000}
 .edu-card--nus{background:rgba(29,66,124,.05);border-color:rgba(29,66,124,.18)}
+.edu-card--nus .edu-inst{color:#1D427C}
 .edu-card--ccnu{background:rgba(0,117,129,.05);border-color:rgba(0,117,129,.18)}
+.edu-card--ccnu .edu-inst{color:#007581}
 .edu-logo{width:56px;height:56px;object-fit:contain;flex-shrink:0}
 .edu-top{display:flex;gap:12px;align-items:center}
 .edu-top-text{flex:1}
