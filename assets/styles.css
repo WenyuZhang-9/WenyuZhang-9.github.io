@@ -104,7 +104,10 @@ p:last-child{margin-bottom:0}
 .edu-card{display:grid;grid-template-columns:80px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line);align-items:start}
 .edu-card:first-child{border-top:0;padding-top:0}
 .edu-logo{width:64px;height:64px;object-fit:contain;border-radius:6px;border:1px solid var(--line);padding:4px;background:#fff;flex-shrink:0;margin-top:2px}
-.edu-degree{font-size:.98rem;font-weight:700;margin:0 0 12px;color:var(--ink)}
+.edu-header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:4px}
+.edu-degree{font-size:.98rem;font-weight:700;margin:0;color:var(--ink)}
+.edu-date{font-size:.82rem;color:var(--muted);white-space:nowrap;flex-shrink:0}
+.edu-inst{font-size:.88rem;color:var(--muted);margin:0 0 10px}
 .edu-meta{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}
 .edu-meta dt{color:var(--muted);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;padding-top:1px}
 .edu-meta dd{margin:0;font-size:.88rem;color:var(--ink)}
