@@ -197,7 +197,7 @@ p:last-child{margin-bottom:0}
 .about-news-updated{font-size:.7rem;color:var(--muted);white-space:nowrap}
 
 /* ── Latest News list ── */
-.news-list{list-style:none;margin:0;padding:0 16px;flex:1;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.news-list{list-style:none;margin:0;padding:0 16px;flex:1;min-height:0;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 .news-item{padding:13px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
 .news-item:last-child{border-bottom:0;padding-bottom:14px}
 .news-date{font-size:.7rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
