@@ -101,7 +101,7 @@ p:last-child{margin-bottom:0}
 
 /* ── Education cards ── */
 .edu-list{display:grid;gap:0}
-.edu-card{display:grid;grid-template-columns:80px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line);align-items:start}
+.edu-card{display:grid;grid-template-columns:118px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line);align-items:start}
 .edu-card:first-child{border-top:0;padding-top:0}
 .edu-logo{width:110px;height:110px;object-fit:contain;flex-shrink:0;margin-top:2px}
 .edu-header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:4px}
