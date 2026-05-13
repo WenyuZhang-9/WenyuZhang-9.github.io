@@ -18,7 +18,23 @@
       "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\\\\assets\\\\media\\\\pub\\\\pub3\")",
       "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\\\\assets\\\\media\\\\pub\\\\pub4\")",
       "Bash(python3 -c ' *)",
-      "Bash(python3)"
+      "Bash(python3)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" status)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" diff --stat HEAD)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" diff HEAD -- assets/styles.css)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" status --short)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" log --oneline -3)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" log --oneline origin/main..HEAD)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" add assets/styles.css assets/site.js index.html)",
+      "Bash(git -C c:/Users/73934/Desktop/WenyuZhang-9.github.io commit -m ' *)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" push)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" add index.html)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" add index.html assets/styles.css)",
+      "Bash(git -C \"c:/Users/73934/Desktop/WenyuZhang-9.github.io\" add assets/styles.css)",
+      "Bash(Get-ChildItem \"C:\\\\Users\\\\73934\\\\Pictures\\\\Screenshots\", \"C:\\\\Users\\\\73934\\\\Desktop\", \"C:\\\\Users\\\\73934\\\\Downloads\" -Include \"*.png\",\"*.jpg\",\"*.jpeg\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -First 15)",
+      "Bash(Format-Table Name, LastWriteTime, DirectoryName -AutoSize)",
+      "PowerShell(Rename-Item \"C:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\\\\assets\\\\media\\\\authors\\\\97e053b0eb0f04f4aa9213022b985450.jpg\" \"me_new.jpg\")"
     ]
   }
 }
