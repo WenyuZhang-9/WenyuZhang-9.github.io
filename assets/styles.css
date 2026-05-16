@@ -206,6 +206,7 @@ p:last-child{margin-bottom:0}
 .news-date{font-size:.7rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
 .news-body{font-size:.86rem;line-height:1.65;color:var(--ink)}
 .news-body em{font-style:italic;color:var(--muted)}
+.news-body a{color:var(--ink);font-weight:700}
 
 /* ── Section headings ── */
 .section-h{font-size:1.55rem;margin-bottom:24px;padding-bottom:10px;border-bottom:2px solid var(--line)}
