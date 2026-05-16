@@ -130,6 +130,7 @@ p:last-child{margin-bottom:0}
 .edu-meta dd{margin:0;font-size:.88rem;color:var(--ink)}
 .edu-award-list{margin:0;padding-left:14px;display:grid;gap:1px}
 .edu-award-list li{font-size:.88rem;color:var(--ink)}
+.edu-award-list a{color:var(--accent)}
 
 /* ── Teaching evaluations ── */
 .eval-box{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
