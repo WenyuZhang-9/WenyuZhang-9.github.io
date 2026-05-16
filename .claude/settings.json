@@ -34,7 +34,8 @@
       "Bash(Get-ChildItem \"C:\\\\Users\\\\73934\\\\Pictures\\\\Screenshots\", \"C:\\\\Users\\\\73934\\\\Desktop\", \"C:\\\\Users\\\\73934\\\\Downloads\" -Include \"*.png\",\"*.jpg\",\"*.jpeg\" -ErrorAction SilentlyContinue)",
       "Bash(Select-Object -First 15)",
       "Bash(Format-Table Name, LastWriteTime, DirectoryName -AutoSize)",
-      "PowerShell(Rename-Item \"C:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\\\\assets\\\\media\\\\authors\\\\97e053b0eb0f04f4aa9213022b985450.jpg\" \"me_new.jpg\")"
+      "PowerShell(Rename-Item \"C:\\\\Users\\\\73934\\\\Desktop\\\\WenyuZhang-9.github.io\\\\assets\\\\media\\\\authors\\\\97e053b0eb0f04f4aa9213022b985450.jpg\" \"me_new.jpg\")",
+      "Bash(git commit *)"
     ]
   }
 }
