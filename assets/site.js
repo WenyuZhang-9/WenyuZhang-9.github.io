@@ -108,6 +108,33 @@ if (carousel) {
   setInterval(() => goTo(current + 1), 4000);
 }
 
+// Dark mode toggle
+(function () {
+  const root = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initial = saved || (prefersDark ? 'dark' : 'light');
+  root.setAttribute('data-theme', initial);
+
+  const btn = document.createElement('button');
+  btn.className = 'dark-toggle';
+  btn.setAttribute('aria-label', 'Toggle dark mode');
+
+  function updateIcon() {
+    const dark = root.getAttribute('data-theme') === 'dark';
+    btn.innerHTML = dark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  }
+  updateIcon();
+
+  btn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateIcon();
+  });
+  document.body.appendChild(btn);
+})();
+
 // Back to top button
 (function () {
   const btn = document.createElement('button');
