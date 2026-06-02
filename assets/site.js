@@ -133,18 +133,38 @@ if (carousel) {
     updateIcon();
   });
   document.body.appendChild(btn);
+
+  // Follow system preference changes when no manual override is saved
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('theme')) {
+      root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      updateIcon();
+    }
+  });
 })();
 
-// Back to top button
+// Back to top button with scroll progress ring
 (function () {
+  const RADIUS = 19;
+  const CIRC = 2 * Math.PI * RADIUS;
+
   const btn = document.createElement('button');
   btn.className = 'back-to-top';
   btn.setAttribute('aria-label', 'Back to top');
-  btn.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+  btn.innerHTML = `<svg class="progress-ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="progress-ring-fill" cx="22" cy="22" r="${RADIUS}"/></svg><i class="fa-solid fa-chevron-up"></i>`;
   document.body.appendChild(btn);
+
+  const ring = btn.querySelector('.progress-ring-fill');
+  ring.style.strokeDasharray = CIRC;
+  ring.style.strokeDashoffset = CIRC;
+
   window.addEventListener('scroll', () => {
-    btn.classList.toggle('visible', window.scrollY > 300);
+    const scrolled = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    if (max > 0) ring.style.strokeDashoffset = CIRC * (1 - scrolled / max);
+    btn.classList.toggle('visible', scrolled > 300);
   }, { passive: true });
+
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
 
