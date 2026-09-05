@@ -31,6 +31,7 @@ if (mapEl && typeof L !== 'undefined') {
   ];
   const conferences = [
     { latlng: [37.779, -122.419], label: 'AAG Annual Meeting 2026', sub: 'San Francisco, CA' },
+    { latlng: [60.205, 24.655], label: 'WPSC 2026', sub: 'Helsinki/Espoo, Finland · July 2026' },
     { latlng: [49.283, -123.121], label: 'International Cartographic Conference 2025', sub: 'Vancouver, BC' },
     { latlng: [42.331, -83.046], label: 'AAG Annual Meeting 2025', sub: 'Detroit, MI' },
     { latlng: [38.879, -77.107], label: 'Symposium on Spatiotemporal Data Science', sub: 'Arlington, VA' }
