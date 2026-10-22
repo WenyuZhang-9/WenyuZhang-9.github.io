@@ -14,14 +14,24 @@ document.querySelectorAll('a[href]').forEach(a => {
 const mapEl = document.getElementById('footprint-map');
 if (mapEl && typeof L !== 'undefined') {
   const map = L.map('footprint-map', { zoomControl: true, scrollWheelZoom: false }).setView([30, 20], 2);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18
   }).addTo(map);
 
   const institutionIcon = L.divIcon({ className: '', html: '<div style="width:12px;height:12px;border-radius:50%;background:#2f5d7c;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>', iconSize: [12, 12], iconAnchor: [6, 6] });
   const conferenceIcon = L.divIcon({ className: '', html: '<div style="width:10px;height:10px;border-radius:2px;background:#e07b39;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>', iconSize: [10, 10], iconAnchor: [5, 5] });
 
+  const travelIcon = L.divIcon({ className: '', html: '<div style="width:11px;height:11px;border-radius:50%;background:#4b8563;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>', iconSize: [11, 11], iconAnchor: [5.5, 5.5] });
+  const travels = [
+    { latlng: [64.963, -19.020], label: 'Iceland', sub: 'Summer 2026 · Road trip' },
+    { latlng: [-7.257, 112.752], label: 'Surabaya, Indonesia', sub: 'Fall 2023 · Hiking' },
+    { latlng: [-33.869, 151.209], label: 'Sydney, Australia', sub: 'Winter 2023 · Travel' }
+  ];
+  travels.forEach(({ latlng, label, sub }) => {
+    L.marker(latlng, { icon: travelIcon }).addTo(map)
+      .bindPopup(`<strong>${label}</strong><br><span style="font-size:.82rem;color:#666">${sub}</span>`);
+  });
   const institutions = [
     { latlng: [30.628, -96.334], label: 'Texas A&M University', sub: 'College Station, TX · 2024–present' },
     { latlng: [1.296, 103.776], label: 'National University of Singapore', sub: 'Singapore · 2023–2024' },
