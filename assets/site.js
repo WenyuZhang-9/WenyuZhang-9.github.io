@@ -19,6 +19,23 @@ if (mapEl && typeof L !== 'undefined') {
     maxZoom: 18
   }).addTo(map);
 
+  // Country outlines from Natural Earth (public domain), via datasets/geo-countries.
+  fetch('assets/footprint-countries.geojson')
+    .then(response => {
+      if (!response.ok) throw new Error('Country boundaries could not be loaded');
+      return response.json();
+    })
+    .then(countries => {
+      L.geoJSON(countries, {
+        style: { color: '#b77c20', weight: 1.5, fillColor: '#efb647', fillOpacity: 0.32 },
+        onEachFeature: (feature, layer) => layer.bindTooltip(feature.properties.name)
+      }).addTo(map);
+      // Keep Singapore visible at the world overview scale.
+      L.circleMarker([1.352, 103.820], {
+        radius: 6, color: '#b77c20', weight: 1.5, fillColor: '#efb647', fillOpacity: 0.6
+      }).addTo(map).bindTooltip('Singapore');
+    })
+    .catch(error => console.warn('Footprint country highlights:', error));
   const institutionIcon = L.divIcon({ className: '', html: '<div style="width:12px;height:12px;border-radius:50%;background:#2f5d7c;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>', iconSize: [12, 12], iconAnchor: [6, 6] });
   const conferenceIcon = L.divIcon({ className: '', html: '<div style="width:10px;height:10px;border-radius:2px;background:#e07b39;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>', iconSize: [10, 10], iconAnchor: [5, 5] });
 
