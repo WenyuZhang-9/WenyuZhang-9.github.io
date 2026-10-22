@@ -24,6 +24,7 @@ if (mapEl && typeof L !== 'undefined') {
 
   const travelIcon = L.divIcon({ className: '', html: '<div style="width:11px;height:11px;border-radius:50%;background:#4b8563;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)"></div>', iconSize: [11, 11], iconAnchor: [5.5, 5.5] });
   const travels = [
+    { latlng: [56.264, 9.502], label: 'Denmark', sub: 'Summer 2026 · Travel' },
     { latlng: [64.963, -19.020], label: 'Iceland', sub: 'Summer 2026 · Road trip' },
     { latlng: [-7.257, 112.752], label: 'Surabaya, Indonesia', sub: 'Fall 2023 · Hiking' },
     { latlng: [-33.869, 151.209], label: 'Sydney, Australia', sub: 'Winter 2023 · Travel' }
