@@ -43,6 +43,8 @@ if (mapEl && typeof L !== 'undefined') {
   const travels = [
     { latlng: [56.264, 9.502], label: 'Denmark', sub: 'Summer 2026 · Travel' },
     { latlng: [64.963, -19.020], label: 'Iceland', sub: 'Summer 2026 · Road trip' },
+    { latlng: [13.756, 100.502], label: 'Bangkok, Thailand', sub: 'Spring 2024 · Travel' },
+    { latlng: [3.139, 101.687], label: 'Kuala Lumpur, Malaysia', sub: 'Spring 2024 · Travel' },
     { latlng: [-7.257, 112.752], label: 'Surabaya, Indonesia', sub: 'Fall 2023 · Hiking' },
     { latlng: [-33.869, 151.209], label: 'Sydney, Australia', sub: 'Winter 2023 · Travel' }
   ];
